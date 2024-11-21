@@ -1,0 +1,61 @@
+Comprehensive Database Management Task: Library Management System
+Objective: Create a complete database management system for a library, covering design, implementation, querying, optimization, and security.
+
+Task Breakdown
+Database Design
+
+Create a Relational Database Schema:
+Design tables for:
+Books: BookID, Title, PublicationYear, ISBN, Genre
+Authors: AuthorID, Name, Birthdate
+Members: MemberID, Name, MembershipDate, Email
+Loans: LoanID, BookID, MemberID, LoanDate, ReturnDate
+Define relationships:
+A book can have multiple authors (Many-to-Many).
+A member can borrow multiple books (One-to-Many).
+Specify primary keys and foreign keys.
+SQL Query Writing
+
+Write SQL queries to perform the following:
+Retrieve all books along with their authors.
+Find all members who borrowed books in the last month.
+Calculate the average number of books borrowed per member.
+List the top 5 most borrowed books.
+Database Normalization
+
+Normalize the Loans table if it contains redundant data (e.g., member details repeated with each loan).
+Explain the normalization process and provide the resulting tables in at least 3NF.
+Data Migration
+
+Plan a migration from an existing flat-file system (CSV) to the newly designed relational database.
+Create a mapping of fields from the CSV to the database tables.
+Write a script (in Python or SQL) to perform the migration, ensuring data integrity.
+Database Performance Tuning
+
+Identify and optimize slow-running queries from the library database.
+Use indexing on frequently queried fields (e.g., BookID, MemberID).
+Document the performance improvements by measuring execution times before and after optimization.
+Backup and Recovery Strategy
+
+Develop a backup strategy:
+Schedule daily incremental backups and weekly full backups.
+Use database tools (e.g., pg_dump for PostgreSQL or mysqldump for MySQL).
+Create a recovery plan that details steps to restore the database from backups in case of failure.
+Implementing Database Security
+
+Identify security risks for the library database.
+Implement user roles:
+Admin: Full access to all tables.
+Librarian: Access to books and loans tables.
+Member: Access to their own data and loan history.
+Enable encryption for sensitive data (e.g., member emails).
+Document security measures taken and outline a plan for regular audits.
+Deliverables
+A complete database schema diagram.
+SQL scripts for creating tables and relationships.
+SQL queries as specified.
+Documentation for the normalization process.
+Data migration script and sample output.
+Performance tuning report with before-and-after metrics.
+Backup and recovery strategy document.
+Security implementation report.
