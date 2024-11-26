@@ -1,0 +1,7 @@
+Lai iegūtu no backup dataus izmantojot cmd, nepieciešams
+
+
+mysql -u root -p librarydb < C:\Users\digadm\programming\BotTask\sql\MySQLBackup\library_26112024.sql
+
+
+kā arī aktivizīt binary Search ini faila

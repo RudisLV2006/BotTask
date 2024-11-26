@@ -1,0 +1,3 @@
+Lai iegūtu no backup dataus izmantojot powershell/terminal, nepieciešams
+
+GET-Content C:\Users\digadm\programming\BotTask\sql\MySQLBackup\library_26112024.sql | mysql -u root -p librarydb
